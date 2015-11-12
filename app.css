@@ -196,6 +196,16 @@ nav ul#tags li a.danger:after {
   background-color: red;
   height: 12px;
   line-height: 12px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  20% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 nav ul li:hover {
