@@ -59,13 +59,22 @@ ul.dd li a:hover {
   border-color: #555 transparent transparent transparent;
 }
 
-.dd-text > div {
+ul.dd {
   transition: all .25s ease;
-  display:none;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.dd-text:hover > div {
-  display:block;
+ul.dd li {
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.dd-text:hover ul.dd {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
 }
 
 #sidebar-container {
